@@ -1405,13 +1405,9 @@ footer p{
 }
 
 .hero{
-
     width:100%;
-
-    max-width:340px;
-
+    max-width:100%;
     margin:0 auto;
-
 }
 
 .hero h1{
@@ -1652,9 +1648,9 @@ section{
 }
 
 .container{
-
     width:92%;
-
+    max-width:100%;
+    overflow-x:hidden;
 }
 
 .channel,
