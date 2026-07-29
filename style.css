@@ -218,6 +218,21 @@ color:#7B7B7B;
 
 }
 
+/* New: credibility line under the tagline */
+.hero-subline{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--accent);
+
+    letter-spacing:.2px;
+
+    margin-top:10px;
+
+}
+
 
 .hero-email{
 
@@ -266,6 +281,86 @@ color:#7B7B7B;
 }
 
 
+/* New: primary CTA buttons — used in the hero and in .final-cta */
+
+.hero-cta{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:28px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:.2px;
+
+    transition:.3s ease;
+
+    border:1px solid transparent;
+
+}
+
+.btn-primary{
+
+    background:linear-gradient(90deg,var(--accent),#c17a3f);
+
+    color:#fff;
+
+    box-shadow:0 8px 22px rgba(154,90,36,.25);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 30px rgba(154,90,36,.32);
+
+}
+
+.btn-secondary{
+
+    background:transparent;
+
+    color:var(--text);
+
+    border-color:rgba(0,0,0,.14);
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-3px);
+
+    border-color:var(--accent);
+
+    color:var(--accent);
+
+}
+
 
 .social-icons{
 
@@ -297,33 +392,40 @@ color:#7B7B7B;
 
 }
 
-/* Brand Colors */
+/* Brand Colors — order matches the icon sequence in index.html:
+   1 YouTube, 2 Instagram, 3 TikTok, 4 Facebook, 5 X, 6 LinkedIn */
 
 .social-icons a:nth-child(1){
 
-    color:#E4405F; /* Instagram */
+    color:#FF0000; /* YouTube */
 
 }
 
 .social-icons a:nth-child(2){
 
-    color:#000000; /* TikTok */
+    color:#E4405F; /* Instagram */
 
 }
 
 .social-icons a:nth-child(3){
 
-    color:#1877F2; /* Facebook */
+    color:#000000; /* TikTok */
 
 }
 
 .social-icons a:nth-child(4){
 
-    color:#000000; /* X */
+    color:#1877F2; /* Facebook */
 
 }
 
 .social-icons a:nth-child(5){
+
+    color:#000000; /* X */
+
+}
+
+.social-icons a:nth-child(6){
 
     color:#0A66C2; /* LinkedIn */
 
@@ -335,10 +437,11 @@ color:#7B7B7B;
 
 }
 
-.intro{
+.intro,
+.section-intro{
 
     max-width:760px;
-    margin:auto;
+    margin:0 auto 28px;
     font-size:18px;
     color:#444;
     line-height:1.6;
@@ -392,6 +495,69 @@ var(--accent),
 #f2b47c
 
 );
+
+}
+
+
+/* ================= AUTHORITY STRIP ================= */
+
+.authority-strip{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:56px;
+
+    padding:36px 0;
+
+    margin:10px 0 30px;
+
+    border-top:1px solid var(--border);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.stat-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:4px;
+
+    text-align:center;
+
+}
+
+.stat-number{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+    color:var(--accent);
+
+}
+
+.stat-label{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:.6px;
+
+    text-transform:uppercase;
+
+    color:var(--muted);
 
 }
 
@@ -509,6 +675,95 @@ transition:.25s;
 
 }
 
+
+/* ================= TEACH (What I Teach) ================= */
+/* Same card language as .channel, wider single feature */
+
+.teach-feature{
+
+    display:flex;
+
+    gap:24px;
+
+    align-items:center;
+
+    padding:28px;
+
+    background:#FFFFFF;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    border-radius:22px;
+
+    box-shadow:
+
+0 1px 1px rgba(0,0,0,.02),
+
+0 10px 35px rgba(0,0,0,.04),
+
+0 40px 90px rgba(0,0,0,.03);
+
+    transition:.35s;
+
+}
+
+.teach-feature:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.teach-feature img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:20px;
+
+    flex-shrink:0;
+
+}
+
+.teach-feature h3{
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.teach-feature p{
+
+    font-size:15px;
+
+    color:var(--muted);
+
+    margin-bottom:10px;
+
+}
+
+.teach-feature a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:600;
+
+    color:var(--accent);
+
+    transition:.25s;
+
+}
+
+.teach-feature a:hover{
+
+    gap:12px;
+
+}
 
 
 
@@ -806,6 +1061,23 @@ transform:translateY(-6px);
 
 }
 
+/* New: one-line workflow/technique note under each film synopsis */
+
+.film-technique{
+
+    margin-top:10px;
+
+    padding-top:10px;
+
+    border-top:1px dashed rgba(0,0,0,.1);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:var(--accent);
+
+}
 
 
 
@@ -944,6 +1216,51 @@ transform:translateY(-6px);
 }
 
 
+/* ================= FINAL CTA ================= */
+
+.final-cta{
+
+    text-align:center;
+
+    background:#FFFFFF;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    border-radius:28px;
+
+    padding:56px 30px;
+
+    margin:30px 0 10px;
+
+    box-shadow:
+
+0 1px 1px rgba(0,0,0,.02),
+
+0 12px 35px rgba(0,0,0,.04),
+
+0 40px 90px rgba(0,0,0,.03);
+
+}
+
+.final-cta h2::after{
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.final-cta .section-intro{
+
+    margin:0 auto 28px;
+
+}
+
+.final-cta .hero-cta{
+
+    margin-bottom:0;
+
+}
 
 
 
@@ -1001,7 +1318,8 @@ footer p{
 
 }
 
-.intro{
+.intro,
+.section-intro{
 
     font-size:17px;
 
@@ -1026,6 +1344,14 @@ footer p{
 
 }
 
+.teach-feature{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
 .film{
 
     grid-template-columns:1fr;
@@ -1040,6 +1366,12 @@ footer p{
 .film img{
 
     height:220px;
+
+}
+
+.authority-strip{
+
+    gap:36px;
 
 }
 
@@ -1098,6 +1430,28 @@ footer p{
 
 }
 
+.hero-subline{
+
+    font-size:13px;
+
+}
+
+.hero-cta{
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    padding:13px 24px;
+
+}
+
 .social-icons{
 
     gap:18px;
@@ -1116,13 +1470,15 @@ section{
 
 }
 
-.intro{
+.intro,
+.section-intro{
 
     font-size:16px;
 
 }
 
-.channel{
+.channel,
+.teach-feature{
 
     display:flex;
 
@@ -1138,7 +1494,8 @@ section{
 
 }
 
-.channel img{
+.channel img,
+.teach-feature img{
 
     width:54px;
 
@@ -1150,7 +1507,8 @@ section{
 
 }
 
-.channel h3{
+.channel h3,
+.teach-feature h3{
 
     font-size:20px;
 
@@ -1158,7 +1516,8 @@ section{
 
 }
 
-.channel p{
+.channel p,
+.teach-feature p{
 
     font-size:14px;
 
@@ -1167,7 +1526,8 @@ section{
     margin-bottom:10px;
 
 }
-.channel a{
+.channel a,
+.teach-feature a{
 
     font-size:15px;
 
@@ -1253,6 +1613,28 @@ section{
 
 }
 
+.authority-strip{
+
+    gap:26px 40px;
+
+    padding:26px 0;
+
+}
+
+.stat-number{
+
+    font-size:22px;
+
+}
+
+.final-cta{
+
+    padding:36px 20px;
+
+    border-radius:20px;
+
+}
+
 .container{
 
     width:92%;
@@ -1260,7 +1642,8 @@ section{
 }
 
 .channel,
-.film-card{
+.film-card,
+.teach-feature{
 
     border-radius:16px;
 
