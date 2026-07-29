@@ -1442,19 +1442,16 @@ footer p{
 }
 
 .hero-cta{
-
-    flex-direction:column;
-
-    gap:12px;
-
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
 }
 
 .btn{
-
-    width:100%;
-
-    padding:13px 24px;
-
+    width:auto;
+    min-width:155px;
+    padding:12px 22px;
 }
 
 .social-icons{
