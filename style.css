@@ -803,6 +803,11 @@ border:1px solid rgba(0,0,0,.05);
 
 }
 
+.nadidove-films{
+    color:var(--accent);
+    font-weight: 1000;
+}
+
 
 /* ================= PLAYABLE POSTER ================= */
 
