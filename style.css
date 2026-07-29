@@ -683,42 +683,60 @@ footer p:last-child{
 
 .profile{
 
-    width:110px;
-    height:110px;
+    width:95px;
+    height:95px;
+
+    margin-bottom:18px;
 
 }
 
 .hero{
 
-    padding-top:20px;
+    padding:34px 0 18px;
 
 }
 
 .hero h1{
 
-    font-size:36px;
+    font-size:37px;
+
+    letter-spacing:-2px;
+
+    line-height:.95;
+
+    margin-bottom:8px;
 
 }
 
 .roles{
 
-    font-size:11px;
-    letter-spacing:2px;
-    margin-bottom:14px;
+    font-size:13px;
+
+    letter-spacing:0;
+
+    line-height:1.5;
+
+    color:#7B7B7B;
+
+    margin-bottom:18px;
 
 }
 
 .social-icons{
 
-    gap:10px;
+    gap:18px;
 
 }
 
 .social-icons a{
 
-    width:34px;
-    height:34px;
-    font-size:14px;
+    font-size:22px;
+
+}
+
+section{
+
+    padding:28px 0;
 
 }
 
@@ -730,21 +748,52 @@ footer p:last-child{
 
 .channel{
 
-    flex-direction:column;
-    text-align:center;
+    display:flex;
+
+    flex-direction:row;
+
+    align-items:center;
+
+    text-align:left;
+
+    gap:16px;
+
+    padding:18px;
 
 }
 
 .channel img{
 
-    width:58px;
-    height:58px;
+    width:54px;
+
+    height:54px;
+
+    border-radius:14px;
+
+    flex-shrink:0;
 
 }
 
 .channel h3{
 
-    font-size:18px;
+    font-size:20px;
+
+    margin-bottom:4px;
+
+}
+
+.channel p{
+
+    font-size:14px;
+
+    line-height:1.45;
+
+    margin-bottom:10px;
+
+}
+.channel a{
+
+    font-size:15px;
 
 }
 
@@ -754,10 +803,58 @@ footer p:last-child{
 
 }
 
-.film img{
+.film-image img{
 
-    height:200px;
+    height:180px;
 
 }
+
+.film-content{
+
+    padding:18px;
+
+}
+
+.film-content h3{
+
+    font-size:20px;
+
+    line-height:1.15;
+
+}
+
+.film-content p{
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+.container{
+
+    width:92%;
+
+}
+
+.channel,
+.film-card{
+
+    border-radius:18px;
+
+}
+
+.hero{
+
+    max-width:360px;
+
+    margin:auto;
+
+}
+
+
+
+
+
 
 }
