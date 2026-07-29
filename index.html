@@ -171,12 +171,23 @@
 
         <article class="film-card">
 
-            <div class="film-image">
+            <div class="film-poster watch-film" data-video="YOUR_YOUTUBE_VIDEO_ID">
 
-                <img src="assets/Ring Road Drop Off Poster.jpeg"
-                     alt="Ring Road Drop Off">
+    <img src="assets/Ring Road Drop Off Poster.jpeg" alt="Ring Road Drop Off">
 
-            </div>
+    <div class="play-overlay">
+
+        <div class="play-button">
+
+            <i class="fa-solid fa-play"></i>
+
+        </div>
+
+        <span>Watch Film</span>
+
+    </div>
+
+</div>
 
             <div class="film-content">
 
@@ -189,8 +200,11 @@
                     blending cinematic visuals with modern storytelling.
                 </p>
 
-                <a href="#">
-                    Watch Film ↗
+                <a
+                class="watch-film"
+                data-video="IXxfpSez8vk?si=b4ApwtHAXEnyqqsv"
+                href="#">
+                    <!-- Watch Film -->
                 </a>
 
             </div>
@@ -201,12 +215,23 @@
 
         <article class="film-card">
 
-            <div class="film-image">
+           <div class="film-poster watch-film" data-video="YOUR_YOUTUBE_VIDEO_ID">
 
-                <img src="assets/Secretary Bird.jpg"
-                     alt="The Last Waterhole">
+    <img src="assets/Secretary Bird.jpg" alt="The Last Waterhole">
 
-            </div>
+    <div class="play-overlay">
+
+        <div class="play-button">
+
+            <i class="fa-solid fa-play"></i>
+
+        </div>
+
+        <span>Watch Film</span>
+
+    </div>
+
+</div>
 
             <div class="film-content">
 
@@ -219,8 +244,11 @@
                     AI-assisted visual storytelling.
                 </p>
 
-                <a href="#">
-                    Watch Film ↗
+                <a
+                class="watch-film"
+                data-video="BxPsegowbZg?si=cN300HQsy0-Zzjsh"
+                href="#">
+                    <!-- Watch Film -->
                 </a>
 
             </div>
@@ -246,5 +274,32 @@
 
 </footer>
 
+
+
+<!-- ================= VIDEO MODAL ================= -->
+
+<div class="video-modal">
+
+    <div class="video-box">
+
+        <button class="close-video">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <iframe
+            id="youtube-player"
+            src=""
+            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
