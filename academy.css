@@ -322,23 +322,68 @@ footer {
     position: relative;
     z-index: 2;
     margin-top: 100px;
-    padding: 55px 0;
+    padding: 80px 0 50px;
     background: transparent;
+    border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.footer-brand h4 {
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 320px;
+}
+
+.footer-links h5 {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+    color: var(--text);
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    padding-top: 35px;
+    border-top: 1px solid rgba(0,0,0,0.05);
     text-align: center;
 }
 
-footer::before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 1px;
-    margin: 0 auto 28px;
-    background: rgba(0, 0, 0, .08);
-}
-
-footer p {
+.footer-bottom p {
     color: #7A7A7A;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: .2px;
 }
@@ -346,6 +391,14 @@ footer p {
 /* Tablet */
 
 @media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+        margin-bottom: 10px;
+    }
     .academy-hero {
         padding: 85px 20px 35px;
     }
